@@ -1,4 +1,5 @@
 @extends('layouts.admin')
+
 @section('content')
     <h1>All Conferences</h1>
 
@@ -7,6 +8,7 @@
         <tr>
             <th>Title</th>
             <th>Date</th>
+            <th>Location</th>
             <th>Actions</th>
         </tr>
         </thead>
