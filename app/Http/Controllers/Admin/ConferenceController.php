@@ -13,5 +13,7 @@ class ConferenceController extends Controller
 
         // Perduoti $conferences į view
         return view('admin.conferences.index', compact('conferences'));
+
+
     }
 }

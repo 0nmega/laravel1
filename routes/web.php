@@ -34,6 +34,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/admin/conferences', [AdminConferenceController::class, 'index'])->name('admin.conferences.index');
     Route::get('/admin/conferences/create', [AdminConferenceController::class, 'create'])->name('admin.conferences.create');
     Route::get('/admin/conferences', [ConferenceController::class, 'index'])->name('admin.conferences.index');
-
+    Route::resource('admin/conferences', ConferenceController::class);
 
 });
